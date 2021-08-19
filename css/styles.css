@@ -8,12 +8,13 @@ body, html{
     color:#666;
   }
 
-  #p1::selection,#h21::selection{
+  #p1::selection,#h21::selection,.ptext::selection{
     background-color: mistyrose;
   }
 
-  #p2::selection,#p3::selection,h2::selection,h3::selection,.border::selection{
-    background-color: salmon;
+  #p2::selection,#p3::selection,.hst::selection,h3::selection,.border::selection,a::selection{
+    background-color: mistyrose;
+    color: #666;
   }
 
   body::-webkit-scrollbar {
@@ -30,7 +31,7 @@ body, html{
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
   
-  .pimg1, .pimg2, .pimg3{
+  .pimg1, .pimg2, .pimg3,.pimg4{
     position:relative;
     opacity:0.50;
     background-position:center;
@@ -45,7 +46,7 @@ body, html{
   }
   
   .pimg1{
-    background-image:url('https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.aliveinside.org%2Fdonate_now&psig=AOvVaw09EgbOcM0vFAaf22eUrGZO&ust=1629425470307000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPDvkIqBvPICFQAAAAAdAAAAABAD');
+    background-image:url('../Images/child1.jpg');
     min-height:85%;
     background-size: cover;
   }
@@ -56,10 +57,55 @@ body, html{
   }
   
   .pimg3{
-    background-image:url('../Images/img-3.jpg');
+    background-image:url('../Images/donate3.jpg');
     min-height:400px;
   }
+
+  .pimg4{
+    background-image:url('../Images/donate1.jpg');
+    min-height:500px;
+  }
   
+  #connect{
+    position: absolute;
+    right: -30%;
+    top: 20%;
+  }
+
+  .footer-copyright{
+    position: absolute;
+    top: 85%;
+    right: -5%;
+  }
+
+  .fb-ic{
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    color: #3b5998;
+  }
+
+  .li-ic{
+    position: absolute;
+    top: 35%;
+    right: -13%;
+    color: #0e76a8;
+  }
+
+  .tw-ic{
+    position: absolute;
+    top: 35%;
+    right: -28%;
+    color: #00acee;
+  }
+
+  .in-ic{
+    position: absolute;
+    top: 35%;
+    right: -42%;
+    color: #8a3ab9;
+  }
+
   .section{
     text-align:center;
     padding:50px 80px;
@@ -74,21 +120,55 @@ body, html{
     background-color:#282e34;
     color:#ddd;
   }
+
+  .col-md-6{
+    top: -70%;
+  }
   
   .ptext{
     position:absolute;
-    top:50%;
+    top:20%;
+    left: -25%;
     width:100%;
     text-align:center;
     color:#000;
-    font-size:27px;
+    font-size:20px;
     letter-spacing:8px;
     text-transform:uppercase;
   }
   
-  .ptext .border{
-    background-color:#111;
-    color:#fff;
+  .p1text::selection{
+    background-color: mistyrose;
+    color: red;
+  }
+
+  .p1text{
+    padding: 20px;  
+    position: absolute;
+    left: 35.4%;
+    font-family: LimeLight;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 60px;
+    background-image: linear-gradient(70deg, lightsalmon, crimson);
+    background-size: 100%;
+    background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  }
+
+  #text1{
+    position: absolute;
+    top: 130px;
+  }
+
+  .ptext {
+    color: red;
     padding:20px;
   }
   
@@ -102,16 +182,27 @@ body, html{
     }
   }
 
-  .bg-dark{
-    background-color: transparent!important;
-    /*mistyrose - (255,228,225)*/
-  }
-
   .container-fluid{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
   }
   
-  .scrolling-navbar{
-    background-color: mistyrose;
+
+.btn-outline-danger{
+  position: absolute;
+  top: 390%;
+  right: 46%;
+}
+
+.btn-danger{
+  position: absolute;
+  top: 390%;
+  right: 55%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
   }
+}
+.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
