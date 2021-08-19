@@ -46,23 +46,23 @@ body, html{
   }
   
   .pimg1{
-    background-image:url('../Images/child1.jpg');
+    background-image:url('https://res.cloudinary.com/vitrendz-chennai/image/upload/v1629374004/TSF/child1_sivlsv.jpg');
     min-height:85%;
     background-size: cover;
   }
   
   .pimg2{
-    background-image:url('../Images/donate2.jpg');
+    background-image:url('https://res.cloudinary.com/vitrendz-chennai/image/upload/v1629374006/TSF/donate2_rhs4og.jpg');
     min-height:400px;
   }
   
   .pimg3{
-    background-image:url('../Images/donate3.jpg');
+    background-image:url('https://res.cloudinary.com/vitrendz-chennai/image/upload/v1629374025/TSF/donate3_vpuqhj.jpg');
     min-height:400px;
   }
 
   .pimg4{
-    background-image:url('../Images/donate1.jpg');
+    background-image:url('https://res.cloudinary.com/vitrendz-chennai/image/upload/v1629374004/TSF/donate1_bq3hgt.jpg');
     min-height:500px;
   }
   
